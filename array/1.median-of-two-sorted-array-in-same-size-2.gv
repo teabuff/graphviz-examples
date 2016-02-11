@@ -1,0 +1,27 @@
+digraph G {
+  node [shape=plaintext]
+
+  A [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+  <TR>
+    <TD width="30" height="30" BGCOLOR="lightgrey"></TD>
+    <TD width="30" height="30"></TD>
+    <TD width="30" height="30" BGCOLOR="lightgrey"></TD>
+    <TD width="30" height="30"></TD>
+    <TD width="30" height="30"></TD>
+    <TD width="30" height="30" BGCOLOR="lightgrey"></TD>
+    <TD width="30" height="30"></TD>
+    <TD width="0" border="0" cellpadding="0" port="m"></TD>
+    <TD width="30" height="30"></TD>
+    <TD width="30" height="30" BGCOLOR="lightgrey"></TD>
+    <TD width="30" height="30"></TD>
+    <TD width="30" height="30" BGCOLOR="lightgrey"></TD>
+    <TD width="30" height="30"></TD>
+    <TD width="30" height="30"></TD>
+    <TD width="30" height="30" BGCOLOR="lightgrey"></TD>
+  </TR>
+</TABLE>>];
+    mid [label = "mid"];
+    mid -> A:m;
+    label = "Merge View of Two Sorted Array";
+}

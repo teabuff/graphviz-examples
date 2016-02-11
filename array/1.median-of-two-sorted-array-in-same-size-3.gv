@@ -1,0 +1,43 @@
+digraph G {
+  node [shape=plaintext]
+
+  subgraph c1 {
+    A [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+  <TR>
+    <TD width="30" height="30" BGCOLOR="lightgrey"></TD>
+    <TD width="30" height="30" BGCOLOR="lightgrey"></TD>
+    <TD width="30" height="30" PORT="m">10</TD>
+    <TD width="30" height="30"></TD>
+    <TD width="30" height="30"></TD>
+  </TR>
+</TABLE>>];
+    Amid [label = "A_mid"];
+    Amid -> A:m;
+    label = "process #1";
+  }
+
+  subgraph c2 {
+    label = "B[n]";
+    B [label=<
+<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+  <TR>
+    <TD width="30" height="30"></TD>
+    <TD width="30" height="30"></TD>
+    <TD width="30" height="30"></TD>
+    <TD width="30" height="30"></TD>
+    <TD width="30" height="30" PORT="m">15</TD>
+    <TD width="30" height="30" BGCOLOR="lightgrey"></TD>
+    <TD width="30" height="30" BGCOLOR="lightgrey"></TD>
+    <TD width="30" height="30" BGCOLOR="lightgrey"></TD>
+    <TD width="30" height="30" BGCOLOR="lightgrey"></TD>
+  </TR>
+</TABLE>>];
+    Bmid [label = "B_mid"];
+    Bmid -> B:m;
+    label = "process #2";
+  }
+
+  A -> Bmid [ltail=c1,lhead=c2,style="invis"]
+
+}
